@@ -15,6 +15,14 @@
     --shadow-dark: 0 2rem 6rem rgba(0, 0,0, .3);
 }
 
+$bp-lagrest: 75em; //1200px
+$bg-lagre: 68.75em; //1100px
+$bg-medium: 56.25em; //900px
+$bg-small: 37.5em; //600px
+$bg-smallest: 31.2x5em; //500px
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -30,6 +38,10 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px, 10px/16px = 62.5%;
+    
+    @media only screen and (max-width: $bg-lagre) {
+        font-size: 50%; //1rem = 8px; 8px/16px = 50%;
+    }
 }
 
 body {
